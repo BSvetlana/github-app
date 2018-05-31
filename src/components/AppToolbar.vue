@@ -13,13 +13,11 @@
 
 <script>
 export default {
-
-    props: {
-        title: {
-            type: String,
-          default: "GitHub App"
-        }
-}
-
+  props: {
+    title: {
+      type: String,
+      default: "GitHub App"
+    }
+  }
 };
 </script>

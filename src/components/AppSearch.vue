@@ -8,10 +8,9 @@
 
 <script>
 export default {
-    props: {
-        query: String,
-        placeholder: String
-    }
-    
-}
+  props: {
+    query: String,
+    placeholder: String
+  }
+};
 </script>
