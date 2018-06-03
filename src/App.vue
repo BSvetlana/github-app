@@ -21,7 +21,7 @@
             </div>
           </v-ons-list-item>
         </v-ons-list>
-        
+        <empty-state v-if="!showProgress && !repos.length" type="repository" /> 
       </div>
     </v-ons-page>
 </template>
@@ -31,11 +31,13 @@ import AppToolbar from "./components/AppToolbar";
 import AppSearch from "./components/AppSearch";
 import { github } from "./services/GitHub.js";
 import debounce from 'lodash/debounce'
+import EmptyState from './components/EmptyState'
 
 export default {
   components: {
     AppToolbar,
-    AppSearch
+    AppSearch,
+    EmptyState
   },
   data() {
     return {
